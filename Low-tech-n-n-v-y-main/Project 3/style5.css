@@ -1,0 +1,41 @@
+/* Container for the search bar */
+.nav__search {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff; /* Adjust if you want a different background color */
+  z-index: 1000; /* Ensures the search bar stays on top */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Style for the search input */
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px; 
+  width: 300px; /* Adjust width as needed */
+  outline: none;
+}
+
+/* Style for the search button */
+.search-btn {
+  padding: 8px 12px;
+  background-color: #007bff; /* Adjust button color */
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+}
+
+.search-btn i {
+  font-size: 16px; /* Adjust icon size */
+}
+
+nav {
+  position: relative; /* Make sure nav remains relative to allow absolute positioning of search bar */
+  padding-top: 50px; /* Adjust padding to avoid overlap with the search bar */
+}
